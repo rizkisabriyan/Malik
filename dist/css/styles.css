@@ -42,7 +42,8 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 26, 188, 156;
+  /*--bs-primary-rgb: 26, 188, 156;*/
+  --bs-primary-rgb: 126, 196, 207;/*#e0ffff=224, 255, 255*/
   --bs-secondary-rgb: 44, 62, 80;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -62,7 +63,7 @@
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
-  --bs-body-bg: #fff;
+  --bs-body-bg: #e0ffff;/*126, 196, 207=#7ec4cf*/
   --bs-border-width: 0.125rem;
   --bs-border-style: solid;
   --bs-border-color: #dee2e6;
@@ -73,8 +74,8 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #1abc9c;
-  --bs-link-hover-color: #15967d;
+  --bs-link-color: #e0ffff;
+  --bs-link-hover-color: #e0ffff;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
@@ -8081,7 +8082,7 @@ textarea.form-control-lg {
 
 .text-white {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+  color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
 }
 
 .text-body {
@@ -10870,10 +10871,10 @@ html {
   font-size: 2rem;
 }
 .divider-custom.divider-light .divider-custom-line {
-  background-color: #fff;
+  background-color: #7ec4cf;
 }
 .divider-custom.divider-light .divider-custom-icon {
-  color: #fff;
+  color: #000;
 }
 
 .btn-xl {
@@ -10897,18 +10898,21 @@ html {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
 }
+/*warna di top left*/
 #mainNav .navbar-brand {
   color: #fff;
 }
 #mainNav .navbar-nav {
   margin-top: 1rem;
 }
+/*warna di top left*/
 #mainNav .navbar-nav li.nav-item a.nav-link {
   color: #fff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
   color: #1abc9c;
 }
+/*warna onclick*/
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
   color: #fff;
 }
@@ -11009,7 +11013,7 @@ html {
   left: 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  background-color: rgba(26, 188, 156, 0.9);
+  background-color: rgba(126, 196, 207);
 }
 .portfolio .portfolio-item .portfolio-item-caption:hover {
   opacity: 1;
